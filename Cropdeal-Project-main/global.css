@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    /* overflow-x: hidden; */
+}
+/* Bootstrap custom edit */
+.w-100 {
+    margin-top: 25px;
+    width: 80% !important;
+    height: 80%;
+    padding-left:20% ;
+}
+
+/* CSS */
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+#navbar{
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    /* margin: 0px 10px; */
+    padding-bottom: 5px;
+    /* border-radius: 12px; */
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+    background-color: #161b22;
+    /* display: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.logo img{
+    position: absolute;
+    /* margin-top: 15px;
+    margin-left: 10px; */
+    height: 50px;
+    width: 60px;
+}
+.logo i{
+    padding: 9px 50px;
+    position: absolute;
+    font-family: cursive;
+    color: yellowgreen;
+}
+
+.ButtonLogin{
+    height: 40px;
+    width: 100px;
+    background-color: #161b22;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    float: right;
+    margin-top: -67px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 2px 0px;
+}
+
+.ButtonLogin a:hover{
+    color: greenyellow;
+}
+
+.ButtonLogin a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.hlist{
+    list-style: none;
+    padding: 0px;
+}
+
+.hlist li{
+    display: inline-block;
+	margin: 0px 8px 8px 0px;
+}
+
+.hlist li a{
+    text-decoration: none;
+    /* color: aliceblue; */
+    color: white;
+    font-family: cursive;
+    font-weight: 400;
+    /* word-spacing: 20px; */
+    padding: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#navbar li a:hover{
+    /* color: rgb(68, 153, 51); */
+    color: yellowgreen;
+    transition: 0.9s;
+}
+
+/* @media screen and (max-width:600px){
+    #navbar{
+        width: auto;
+    }
+} */
+
+section{
+	/*background-color: #020716;*/
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+section:nth-child(2n){
+    background-color: whitesmoke;
+    /* overflow: hidden; */
+}
+
+section:nth-child(2n+1){
+    background-color: whitesmoke;
+    /* overflow: hidden; */
+}
+
+/* Text Center */
+.text-center{
+    text-align: center;
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+.formargin{
+    margin-top: 50px;
+}
+
+#forcontact{
+    display: flex;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+}
+
+#bootstrap-margin{
+    margin-bottom: 100px;
+}
+
+#contact-form{
+    text-align: left;
+    justify-content: end;
+    /* padding-left: 30px; */
+    /* margin-right: 500px; */
+}
+
+button{
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    margin-left: 290px;
+}
+
+#aboutus p{
+    /* height: %; */
+    width: 60%;
+    text-align: justify;
+    line-height: 1.3;
+    /* overflow: hidden; */
+    /* overflow-wrap: break-word; */
+}
+
+#contact-form input, textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 700px){
+    #navbar {
+        display: none;
+        /* width: 100%;
+        padding: 0% 5%; */
+    }
+
+    .logo{
+        /* display: none; */
+        /* margin: 30%; */
+        height: 50px;
+        width: 100%;
+        padding: 0% 0% 5% 30%;
+        background-color: #161b22;
+        
+    }
+
+    #aboutus p{
+        font-size: 14px;
+        line-height: 2;
+    }
+    .text-center{
+        font-size: 2rem;
+    }
+
+    #contact-form input, textarea{
+        font-size: 0.8rem;
+    }
+
+    .ButtonLogin{
+        margin-top: -45px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .ButtonLogin{
+        display: none;
+    }
+     #aboutus p{
+        font-size: 11px;
+        line-height: 2;
+    }
+
+    #contact-form input, textarea{
+        height: 50%;
+        width: 70%;
+        overflow: hidden;
+    }
+
+    #contact-form label{
+        display: none;
+    }
+    button{
+        /* float: left; */
+        margin-left: 50px;
+    }
+}
